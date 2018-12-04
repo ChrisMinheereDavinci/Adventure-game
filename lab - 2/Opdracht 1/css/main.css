@@ -1,0 +1,22 @@
+#container{
+    width: 600px;
+    height: 600px;
+    background-color:antiquewhite;
+    background-image: url("../img/bg0.jpg");
+    background-repeat: no-repeat;
+    border: 5px solid black;
+}
+
+button{
+    background-color: green;
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px; 
+}
+#picOne{
+    float: right;
+    margin-top: 445px;
+    width: 120px;
+    height: 120px;
+}
