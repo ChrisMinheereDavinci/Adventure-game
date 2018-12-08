@@ -1,3 +1,7 @@
+/* Created by: Chris Minheere
+Date: 05-12-2018 */
+
+
 body{
     background-image: url('../img/bg.gif');
     background-size: cover;
@@ -55,13 +59,16 @@ h1 {
     position: absolute;
     left: 0;
     top: 0;
-    color: rgba(240, 248, 255, 0.39)
+    color: rgba(255, 255, 255, 0);
+    width: 5%;
+    
+
 }
 
 /*--------------button1-------------*/
 #buttonOne {
     position: absolute; 
-    left: 42%;
+    left: 44%;
     top: 70%;  
     width: 250px;
     height: 50px;
@@ -80,7 +87,7 @@ h1 {
 /*--------------button2-------------*/
 #buttonTwo{
     position: absolute; 
-    left: 42%;
+    left: 44%;
     top: 80%;
     width: 250px;
     height: 50px;
@@ -99,7 +106,7 @@ h1 {
 /*--------------button3-------------*/
 #buttonThree{
     position: absolute; 
-    left: 42%;
+    left: 44%;
     top: 90%;
     width: 250px;
     height: 50px;
@@ -125,10 +132,10 @@ h1 {
 
 /*-----------style level's-----------*/
 
-/* "l1b1" Staat voor 'level' 1 'button' 1,  enz enz */
+/* "l1b1" Staat voor 'level' 1 'button' 1,  enz enz               is only used if the buttons have to be moved
 
 /* -------------level 1--------------*/
-#buttonOne.l1b1{
+/* #buttonOne.l1b1{
     color: rgba(1, 163, 69, 0.575);
 }
 
@@ -141,7 +148,7 @@ h1 {
 }
 
 
-/* -------------level 2--------------*/
+/* -------------level 2--------------
 #buttonOne.l2b1{
     color: rgba(1, 163, 69, 0.575);
 }
@@ -152,7 +159,7 @@ h1 {
 
 #buttonThree.l2b3{
     color: rgba(1, 163, 69, 0.575);
-}
+} */
 
 
 
@@ -160,32 +167,131 @@ h1 {
 /*------style of the description------*/
 #description.descriptioncssLevelOne{
     position: absolute;
-    width: 450px;
-    
+    width: 400px;
+    height: 40px;
     bottom: 40%;
-    right: 30%;
+    right: 50%;
     color: white;
-    padding: 20px;
-    padding: 20px;
+    
+    
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
 }
 
 
 #description.descriptioncssLevelTwo{
     position: absolute;
-    width: 400px;
-    height: 200px;;
+    width: 425px;
+    height: 40px;
     top: 15%;
     left: 20%;
     color: rgb(255, 255, 255);
+    
+    
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #description.descriptioncssLevelThree{
     position: absolute;
+    width: 400px;
+    height: 40px;
     bottom: 10%;
     right: 80%;
     color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelFour{
+    position: absolute;
+    width: 400px;
+    height: 35px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelFive{
+    position: absolute;
+    width: 425px;
+    height: 40px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelSix{
+    position: absolute;
+    width: 425px;
+    height: 40px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelSeven{
+    position: absolute;
+    width: 550px;
+    height: 230px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelEight{
+    position: absolute;
+    width: 550px;
+    height: 250px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelNine{
+    position: absolute;
+    width: 455px;
+    height: 50px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description.descriptioncssLevelTen{
+    position: absolute;
+    width: 625px;
+    height: 300px;
+    bottom: 10%;
+    right: 80%;
+    color: rgb(255, 255, 255);
+    
+    
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -197,13 +303,41 @@ h1 {
     margin: 0 auto;
     font-size: 300px;
     text-align: center;
-     transform: rotate(0deg); 
+    transform: rotate(0deg); 
+    color:rgba(163, 1, 1, 0.575);
+    text-shadow: 2px 2px rgba(255, 251, 0, 0.466); 
 }
 
 #description.descriptioncssgameOver{
     position: static;
     margin: 0 auto;
+    width: 820px;
+    height: 60px;
+    background-color: rgba(255, 123, 0, 0.363);
     color: rgb(255, 255, 255);
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 50px;
+    border-radius: 20px;
 }
+
+/*---------------Win---------------*/
+#title.levelWin{
+    position: static;
+    margin: 0 auto;
+    font-size: 300px;
+    text-align: center;
+    transform: rotate(0deg); 
+    color:rgba(255, 251, 0, 0.842);
+    text-shadow: 2px 2px rgba(255, 0, 0, 0.466); 
+}
+
+#description.descriptioncssWelDone{
+    position: static;
+    margin: 0 auto;
+    width: 820px;
+    height: 190px;
+    background-color: rgba(255, 123, 0, 0.363);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    border-radius: 20px;
+}
+
