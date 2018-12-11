@@ -246,9 +246,9 @@ function levelTen() {
         button3.onclick = levelWelDone;
     }
     else {
-        button1.onclick = levelGameOver;
-        button2.onclick = levelGameOver;
-        button3.onclick = levelGameOver;
+        button1.onclick = levelGameOverProf;
+        button2.onclick = levelGameOverProf;
+        button3.onclick = levelGameOverProf;
     }
 
 
@@ -263,7 +263,21 @@ function levelGameOver() {
     description.classList.add('descriptioncssgameOver');
     description.innerHTML = 'oeps dat was niet het juiste andwoord';
     button1.innerHTML = 'Ga Terug';
-    //button1.onclick = reloadGame(); 
+    button1.onclick = reloadGame; 
+    button2.style.display = "none";
+    button3.style.display = "none";
+}
+
+
+function levelGameOverProf() {
+    titleGameOver.classList.add('gameOver');
+    button2.style.display = "inline-block";
+    button3.style.display = "inline-block";
+    titleGameOver.innerHTML = 'GAME OVER!';
+    description.classList.add('descriptioncssgameOver');
+    description.innerHTML = 'Je hebt de Hulp Professor niet gepakt.';
+    button1.innerHTML = 'Ga Terug';
+    button1.onclick = reloadGame; 
     button2.style.display = "none";
     button3.style.display = "none";
 }
@@ -277,7 +291,7 @@ function levelWelDone() {
     description.classList.add('descriptioncssWelDone');
     description.innerHTML = 'Jaa het is gelukt! Nu kan Professor Cor weer verder met zijn werk. bedankt voor het speelen.';
     button1.innerHTML = 'Ga Terug';
-    //button1.onclick = reloadGame(); 
+    button1.onclick = reloadGame; 
     button2.style.display = "none";
     button3.style.display = "none";
 }
