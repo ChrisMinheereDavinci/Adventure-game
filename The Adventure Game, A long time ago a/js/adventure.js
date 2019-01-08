@@ -2,12 +2,14 @@
 // Date: 05-12-2018
 
 
+
 //------------all variables-----------//
 var button1 = document.getElementById('buttonOne');
 var button2 = document.getElementById('buttonTwo');
 var button3 = document.getElementById('buttonThree');
 var titleGameOver = document.getElementById('title');
 var inventory = { 'Sleutel': false }
+var audioPlay = new Audio('audio/audio.mp3')
 
 
 //----------inventory handler---------//
@@ -30,7 +32,7 @@ function startGame() {
     button3.style.display = "none";
     button1.innerHTML = 'Start Game';
     button1.onclick = levelOne;
-
+audioPlay.play();
 }
 
 //-------------level One-------------//
